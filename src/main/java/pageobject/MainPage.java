@@ -28,6 +28,24 @@ public class MainPage {
     // Кнопка "Заказать" внизу
     private static final By ORDER2 = By.xpath(".//button[@class='Button_Button__ra12g Button_Middle__1CSJM']");
 
+    public static final By QUESTION0 = By.id("accordion__heading-0");
+    public static final By QUESTION1 = By.id("accordion__heading-1");
+    public static final By QUESTION2 = By.id("accordion__heading-2");
+    public static final By QUESTION3 = By.id("accordion__heading-3");
+    public static final By QUESTION4 = By.id("accordion__heading-4");
+    public static final By QUESTION5 = By.id("accordion__heading-5");
+    public static final By QUESTION6 = By.id("accordion__heading-6");
+    public static final By QUESTION7 = By.id("accordion__heading-7");
+    public static final By ANSWER0 = By.xpath(".//div[@aria-labelledby='accordion__heading-0']");
+    public static final By ANSWER1 = By.xpath(".//div[@aria-labelledby='accordion__heading-1']");
+    public static final By ANSWER2 = By.xpath(".//div[@aria-labelledby='accordion__heading-2']");
+    public static final By ANSWER3 = By.xpath(".//div[@aria-labelledby='accordion__heading-3']");
+    public static final By ANSWER4 = By.xpath(".//div[@aria-labelledby='accordion__heading-4']");
+    public static final By ANSWER5 = By.xpath(".//div[@aria-labelledby='accordion__heading-5']");
+    public static final By ANSWER6 = By.xpath(".//div[@aria-labelledby='accordion__heading-6']");
+    public static final By ANSWER7 = By.xpath(".//div[@aria-labelledby='accordion__heading-7']");
+
+
 
     private WebDriver driver;
 
@@ -58,11 +76,12 @@ public class MainPage {
         driver.findElement(QUESTION).click();
     }
 
+    // Нажатие на кнопку "Заказать наверху"
     public void clickOrderButton() {
         driver.findElement(ORDER1).click();
     }
 
-
+    // Нажатие на кнопку "Заказать внизу"
     public void clickOrderButton2() {
         driver.findElement(ORDER2).click();
     }

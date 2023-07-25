@@ -118,4 +118,22 @@ public class OrderPage {
         return driver.findElement(ORDERED).isDisplayed();
     }
 
+    public void forWhomFields(String NAME1, String SURNAME1, String ADDRESS1, String PHONE1) {
+        inputName(NAME1);
+        inputSurname(SURNAME1);
+        inputAddress(ADDRESS1);
+        clickButtonMetro();
+        clickStation();
+        inputPhone(PHONE1);
+
+    }
+
+    public void forWhenFields(){
+        clickWhen();
+        clickDate();
+        clickRents();
+        clickDay();
+
+    }
+
 }
